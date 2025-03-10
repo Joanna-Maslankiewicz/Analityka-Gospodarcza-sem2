@@ -1,0 +1,4 @@
+SHOW DATABASES;
+USE sakila;
+SHOW TABLES;
+SELECT * FROM actor;
