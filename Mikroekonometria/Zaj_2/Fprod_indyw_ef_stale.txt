@@ -1,0 +1,27 @@
+Oneway (individual) effect Within Model
+
+Call:
+plm(formula = formula_, data = data_plm, effect = c("individual"), 
+    model = c("within"), index = c("id_farmy", "rok"))
+
+Balanced Panel: n = 43, T = 8, N = 344
+
+Residuals:
+    Min.  1st Qu.   Median  3rd Qu.     Max. 
+-1.57922 -0.14944  0.04239  0.17301  0.80383 
+
+Coefficients:
+        Estimate Std. Error t-value  Pr(>|t|)    
+XAREA  0.5468451  0.0796202  6.8682 3.834e-11 ***
+XLABOR 0.2542944  0.0690519  3.6827 0.0002743 ***
+XNPK   0.1716803  0.0485518  3.5360 0.0004713 ***
+XOTHER 0.0271567  0.0256964  1.0568 0.2914519    
+Xtrend 0.0101457  0.0077028  1.3171 0.1888104    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Total Sum of Squares:    43.632
+Residual Sum of Squares: 24.779
+R-Squared:      0.43209
+Adj. R-Squared: 0.34191
+F-statistic: 45.0417 on 5 and 296 DF, p-value: < 2.22e-16
