@@ -16,10 +16,10 @@ lnrdane = diff(log(dane_zamk)) #logarytmiczne stopy zwrotu
 t(describe(dane_zamk))
 t(describe(lnrdane))
 
-#kurtosis  1.293533e+00 =-- +3
-#se        3.477265e-04 =-- prawie 0, a w typowych finansowych szeregach czasowych zwykle jest ujemna (lewy ogon większy niż prawy) - bo cashofobia
+#kurtosis  1.293533e+00 -- +3
+#se        3.477265e-04 -- prawie 0, a w typowych finansowych szeregach czasowych zwykle jest ujemna (lewy ogon większy niż prawy) - bo cashofobia
 
-#Dlaczego często modelujemy stopy zwrotu, a nie ceny? =-- mniejsze zmienności; bo mają pełny przedział liczbowy (-inf, +inf), a zwykłe mają (-1, +inf), więc lepiej się modeluje
+#Dlaczego często modelujemy stopy zwrotu, a nie ceny? -- mniejsze zmienności; bo mają pełny przedział liczbowy (-inf, +inf), a zwykłe mają (-1, +inf), więc lepiej się modeluje
 
 par(mfrow = c(2,1))
 plot(dane_zamk)
