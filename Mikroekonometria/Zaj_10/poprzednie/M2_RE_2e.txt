@@ -1,0 +1,34 @@
+Twoways effects Random Effect Model 
+   (Nerlove's transformation)
+
+Call:
+plm(formula = formula_, data = data_plm, effect = c("twoways"), 
+    model = c("random"), random.method = "nerlove", index = c("id_stanu", 
+        "rok"))
+
+Balanced Panel: n = 51, T = 3, N = 153
+
+Effects:
+                  var std.dev share
+idiosyncratic  7.9841  2.8256 0.094
+individual    75.6282  8.6964 0.895
+time           0.8986  0.9479 0.011
+theta: 0.8156 (id) 0.6148 (time) 0.5991 (total)
+
+Residuals:
+     Min.   1st Qu.    Median   3rd Qu.      Max. 
+-16.76354  -0.95963  -0.37845   0.52863  23.85608 
+
+Coefficients:
+                  Estimate Std. Error z-value Pr(>|z|)   
+(Intercept)        6.35306    2.22897  2.8502 0.004369 **
+Xliczba_egzekucji -0.02108    0.15385 -0.1370 0.891018   
+Xstopa_bezrobocie  0.29187    0.26517  1.1007 0.271021   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Total Sum of Squares:    1633
+Residual Sum of Squares: 1619.9
+R-Squared:      0.0080188
+Adj. R-Squared: -0.0052076
+Chisq: 1.21254 on 2 DF, p-value: 0.54538

@@ -1,0 +1,14 @@
+Wyniki estymacji parametrow modelu z indywidualnymi efektami losowymi (w tym V(b^))
+"";"OcenaParametru";"BladOceny";"|ocena/blad|";"Pr(>|t_emp|)  ";"(Intercept)";"Xliczba_egzekucji";"Xstopa_bezrobocie"
+"(Intercept)";0,764921465420647;2,84539498231385;0,268827867545693;0,788431540191835;8,09627260537683;0,0281363745201625;-1,17723948256963
+"Xliczba_egzekucji";-0,00349701145400515;0,195063286290687;0,0179275737659513;0,985720455876842;0,0281363745201625;0,0380496856585224;-0,0125377023803338
+"Xstopa_bezrobocie";1,22379303418754;0,44683998119439;2,73877245925125;0,00691429327321848;-1,17723948256963;-0,0125377023803338;0,199665968793803
+ 
+Wariancje skladnika losowego(z modelu FE) =s2_v (idios) i efektu indywidualnego=s2_alfa (id)
+"s2_v_FE"
+79,0935313091037
+"s2_alfa"
+1,66005741381403
+teta= 1 - (s2_v/(s2_v + T*s2_alfa))^0.5 
+"theta"
+0,305021670081792

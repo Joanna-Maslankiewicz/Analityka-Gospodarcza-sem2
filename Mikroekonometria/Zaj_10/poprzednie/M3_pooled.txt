@@ -1,0 +1,73 @@
+Pooling Model
+
+Call:
+plm(formula = formula_, data = data_plm, model = "pooling", index = c("id_stanu", 
+    "rok"))
+
+Balanced Panel: n = 51, T = 3, N = 153
+
+Residuals:
+   Min. 1st Qu.  Median 3rd Qu.    Max. 
+-9.1298 -3.7456 -1.2201  1.6667 68.9977 
+
+Coefficients:
+                    Estimate Std. Error t-value Pr(>|t|)   
+(Intercept)        1.1217357  2.7115590  0.4137 0.679694   
+Xliczba_egzekucji -0.0018798  0.1956223 -0.0096 0.992346   
+Xstopa_bezrobocie  1.1637245  0.4413193  2.6369 0.009247 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Total Sum of Squares:    12845
+Residual Sum of Squares: 12265
+R-Squared:      0.045214
+Adj. R-Squared: 0.032483
+F-statistic: 3.55161 on 2 and 150 DF, p-value: 0.031114
+
+---------------------------------------------------------
+Model z ef. losowymi (H0) vs. Model z ef. stalymi H1
+Hausman Test for Panel Models
+
+	Hausman Test
+
+data:  formula_
+chisq = 0.31125, df = 2, p-value = 0.8559
+alternative hypothesis: one model is inconsistent
+
+
+Dla statystyki chi2 -> p.value = 
+0.855880593515517
+Duze p-value (>0.05), wiec nie ma podstaw do odrzucenia H0 na rzecz H1
+Zatem dane popieraja model z efektami losowymi
+ 
+
+---------------------------------------------------------
+Lagrange FF Multiplier Tests for Panel Models
+Breusch and Pagan (1980) 
+Model ze wspolnym wyrazem wolnym (H0) vs. Model z ef. losowymi (H1)
+H0:  sigma2_alfa=0 i sigma2_lambda=0
+
+	Lagrange Multiplier Test - two-ways effects (Breusch-Pagan)
+
+data:  formula_
+chisq = 101.97, df = 2, p-value < 2.2e-16
+alternative hypothesis: significant effects
+
+
+H0:  sigma2_alfa=0
+
+	Lagrange Multiplier Test - (Breusch-Pagan)
+
+data:  formula_
+chisq = 101.79, df = 1, p-value < 2.2e-16
+alternative hypothesis: significant effects
+
+
+H0:  sigma2_lambda=0
+
+	Lagrange Multiplier Test - time effects (Breusch-Pagan)
+
+data:  formula_
+chisq = 0.18202, df = 1, p-value = 0.6696
+alternative hypothesis: significant effects
+
