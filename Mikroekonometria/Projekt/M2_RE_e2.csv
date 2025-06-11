@@ -1,0 +1,20 @@
+Wyniki estymacji parametrow modelu z indywidualnymi efektami losowymi (w tym V(b^));;;;;;;;;;;;;
+;OcenaParametru;BladOceny;|ocena/blad|;Pr(>|t_emp|)  ;(Intercept);XPrzecietne miesieczne wynagrodzenia brutto;XMieszkania oddane do użytkowania przeznaczone na sprzedaz lub wynajem;XGestosc zaludnienia powierzchni zabudowanej i zurbanizowanej (osoby/km2);XProdukt krajowy brutto na 10 mieszkancow wojewodztwa;XNowo utworzone miejsca pracy;XNaklady inwestycyjne na 1 mieszkanca w cenach biezacych;XPrzecietne miesieczne wydatki na 1 mieszkanca;Xtrend
+(Intercept);1,464571862;0,351985973;4,160881325;4,58E-05;0,123894125;-0,016889988;-0,000929178;-0,074043108;-0,016841126;-0,000472235;0,001984397;-0,006386949;0,00053222
+XPrzecietne miesieczne wynagrodzenia brutto;0,4283;0,1351;3,170292054;0,0017;-0,0169;0,018249867;0,000181655;0,004468509;-0,003913246;7,06E-05;0,000388763;0,000585413;-0,001179585
+XMieszkania oddane do użytkowania przeznaczone na sprzedaz lub wynajem;0,0280;0,0117;2,390400637;0,0177;-0,0009;0,000181655;0,000137151;0,000825268;-0,000239524;2,36E-06;2,71E-05;1,96E-05;-3,87E-06
+XGestosc zaludnienia powierzchni zabudowanej i zurbanizowanej (osoby/km2);-0,7057;0,2587;2,728284503;0,0069;-0,0740;0,004468509;0,000825268;0,066901768;0,005934048;0,000415256;-0,002355218;-0,000895272;2,42E-05
+XProdukt krajowy brutto na 10 mieszkancow wojewodztwa;-0,5100;0,1357;3,757362909;0,0002;-0,0168;-0,003913246;-0,000239524;0,005934048;0,018421353;-9,26E-05;-0,001101903;0,001418356;-0,001331651
+XNowo utworzone miejsca pracy;-0,0110;0,0123;0,889297152;0,3748;-0,0005;7,06E-05;2,36E-06;0,000415256;-9,26E-05;0,000152461;-6,61E-05;-4,74E-05;1,68E-05
+XNaklady inwestycyjne na 1 mieszkanca w cenach biezacych;0,0163;0,0294;0,555175834;0,5794;0,0020;0,000388763;2,71E-05;-0,002355218;-0,001101903;-6,61E-05;0,000864251;0,000302215;-3,33E-05
+XPrzecietne miesieczne wydatki na 1 mieszkanca;0,1259;0,0789;1,596154374;0,1119;-0,0064;0,000585413;1,96E-05;-0,000895272;0,001418356;-4,74E-05;0,000302215;0,006220634;-0,00048529
+Xtrend;0,03635016;0,02221836;1,63604154;0,103293923;0,00053222;-0,001179585;-3,87E-06;2,42E-05;-0,001331651;1,68E-05;-3,33E-05;-0,00048529;0,000493656
+ ;;;;;;;;;;;;;
+Wariancje skladnika losowego(z modelu FE) =s2_v (idios) i efektu indywidualnego=s2_alfa (id);;;;;;;;;;;;;
+s2_v_FE;;;;;;;;;;;;;
+0,002749613;;;;;;;;;;;;;
+s2_alfa;;;;;;;;;;;;;
+0,005251796;;;;;;;;;;;;;
+teta= 1 - (s2_v/(s2_v + T*s2_alfa))^0.5 ;;;;;;;;;;;;;
+theta.id;theta.time;theta.total;;;;;;;;;;;
+0,810134791;0,940524279;0,80750692;;;;;;;;;;;

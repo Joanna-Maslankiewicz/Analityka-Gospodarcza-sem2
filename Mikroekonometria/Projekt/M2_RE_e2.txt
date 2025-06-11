@@ -1,0 +1,57 @@
+Twoways effects Random Effect Model 
+   (Nerlove's transformation)
+
+Call:
+plm(formula = formula_, data = data_plm, effect = c("twoways"), 
+    model = c("random"), random.method = "nerlove", index = c("Wojewodztwo", 
+        "Rok"))
+
+Balanced Panel: n = 16, T = 14, N = 224
+
+Effects:
+                   var  std.dev share
+idiosyncratic 0.002750 0.052437 0.049
+individual    0.005252 0.072469 0.093
+time          0.048410 0.220022 0.858
+theta: 0.8101 (id) 0.9405 (time) 0.8075 (total)
+
+Residuals:
+      Min.    1st Qu.     Median    3rd Qu.       Max. 
+-0.1584007 -0.0315664 -0.0012088  0.0329157  0.3241548 
+
+Coefficients:
+                                                                           Estimate Std. Error z-value  Pr(>|z|)    
+(Intercept)                                                                1.464572   0.351986  4.1609  3.17e-05 ***
+XPrzecietne miesieczne wynagrodzenia brutto                                0.428281   0.135092  3.1703 0.0015229 ** 
+XMieszkania oddane do użytkowania przeznaczone na sprzedaz lub wynajem     0.027994   0.011711  2.3904 0.0168300 *  
+XGestosc zaludnienia powierzchni zabudowanej i zurbanizowanej (osoby/km2) -0.705681   0.258654 -2.7283 0.0063665 ** 
+XProdukt krajowy brutto na 10 mieszkancow wojewodztwa                     -0.509969   0.135725 -3.7574 0.0001717 ***
+XNowo utworzone miejsca pracy                                             -0.010981   0.012348 -0.8893 0.3738434    
+XNaklady inwestycyjne na 1 mieszkanca w cenach biezacych                   0.016321   0.029398  0.5552 0.5787744    
+XPrzecietne miesieczne wydatki na 1 mieszkanca                             0.125890   0.078871  1.5962 0.1104543    
+Xtrend                                                                     0.036350   0.022218  1.6360 0.1018309    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Total Sum of Squares:    0.81558
+Residual Sum of Squares: 0.66615
+R-Squared:      0.18322
+Adj. R-Squared: 0.15283
+Chisq: 48.2287 on 8 DF, p-value: 8.9329e-08
+
+---------------------------------------------------------
+Model z ef. losowymi (H0) vs. Model z ef. stalymi (H1)
+Hausman Test for Panel Models
+
+	Hausman Test
+
+data:  formula_
+chisq = 2.1729, df = 7, p-value = 0.9497
+alternative hypothesis: one model is inconsistent
+
+
+p-value dla stytystyki chi2 = 
+0.949651262146049
+Duze p-value (>0.05), wiec nie ma podstaw do odrzucenia H0 na rzecz H1
+Zatem dane popieraja model z losowymi efektami indywidualnymi i czasowymi
+ 

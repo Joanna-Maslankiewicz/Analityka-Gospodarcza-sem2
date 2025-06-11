@@ -1,0 +1,24 @@
+=== Test autokorelacji (Breusch-Godfrey / Wooldridge) ===
+
+	Breusch-Godfrey/Wooldridge test for serial correlation in panel models
+
+data:  formula_red
+chisq = 58.641, df = 14, p-value = 2.028e-07
+alternative hypothesis: serial correlation in idiosyncratic errors
+
+
+=== Test heteroskedastyczności (Breusch-Pagan) ===
+
+	studentized Breusch-Pagan test
+
+data:  M2_RE_e2_reduced
+BP = 35.288, df = 5, p-value = 1.318e-06
+
+
+=== Test normalności reszt (Jarque-Bera) ===
+
+	Jarque Bera Test
+
+data:  residuals(M2_RE_e2_reduced)
+X-squared = 259.04, df = 2, p-value < 2.2e-16
+

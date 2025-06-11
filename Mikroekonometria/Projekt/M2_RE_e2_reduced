@@ -1,0 +1,37 @@
+Twoways effects Random Effect Model 
+   (Nerlove's transformation)
+
+Call:
+plm(formula = formula_red, data = data, effect = c("twoways"), 
+    model = c("random"), random.method = "nerlove", index = c("Wojewodztwo", 
+        "Rok"))
+
+Balanced Panel: n = 16, T = 14, N = 224
+
+Effects:
+                   var  std.dev share
+idiosyncratic 0.002790 0.052819 0.035
+individual    0.004924 0.070174 0.061
+time          0.072632 0.269502 0.904
+theta: 0.8028 (id) 0.9511 (time) 0.8014 (total)
+
+Residuals:
+      Min.    1st Qu.     Median    3rd Qu.       Max. 
+-0.1547839 -0.0327572 -0.0029529  0.0340284  0.3292866 
+
+Coefficients:
+                                                                             Estimate Std. Error z-value  Pr(>|z|)    
+(Intercept)                                                                  1.583710   0.345117  4.5889 4.456e-06 ***
+X_2Przecietne miesieczne wynagrodzenia brutto                                0.400239   0.134672  2.9719  0.002959 ** 
+X_2Mieszkania oddane do użytkowania przeznaczone na sprzedaz lub wynajem     0.027713   0.011642  2.3803  0.017296 *  
+X_2Gestosc zaludnienia powierzchni zabudowanej i zurbanizowanej (osoby/km2) -0.653886   0.244474 -2.6747  0.007481 ** 
+X_2Produkt krajowy brutto na 10 mieszkancow wojewodztwa                     -0.556957   0.128568 -4.3320 1.478e-05 ***
+X_2trend                                                                     0.050580   0.024006  2.1069  0.035123 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Total Sum of Squares:    0.80865
+Residual Sum of Squares: 0.67496
+R-Squared:      0.16533
+Adj. R-Squared: 0.14618
+Chisq: 43.1805 on 5 DF, p-value: 3.3965e-08

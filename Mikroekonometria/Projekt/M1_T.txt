@@ -1,0 +1,96 @@
+
+---------------------------------------------------------
+F Test for Individual and/or Time Effects
+Test F H0: alfa(1)=...=alfa_(N-1)=0
+1
+Dla statystyki F -> p.value = 
+1
+
+Duze p-value (>0.05), wiec nie ma podstaw do odrzucenia H0 na rzecz H1
+Zatem dane popieraja model dwuczynnikowy
+
+---------------------------------------------------------
+F Test for Individual and/or Time Effects
+Test F H0: alfa(1)=...=alfa_(N-1)=0
+1
+Dla statystyki F -> p.value = 
+1
+
+Duze p-value (>0.05), wiec nie ma podstaw do odrzucenia H0 na rzecz H1
+Zatem dane popieraja model dwuczynnikowy
+
+---------------------------------------------------------
+F Test for Individual and/or Time Effects
+Test F H0: alfa(1)=...=alfa_(N-1)=0
+1
+Dla statystyki F -> p.value = 
+1
+
+Duze p-value (>0.05), wiec nie ma podstaw do odrzucenia H0 na rzecz H1
+Zatem dane popieraja model dwuczynnikowy
+
+---------------------------------------------------------
+F Test for Individual and/or Time Effects
+Test F H0: alfa(1)=...=alfa_(N-1)=0
+1
+Dla statystyki F -> p.value = 
+1
+
+Duze p-value (>0.05), wiec nie ma podstaw do odrzucenia H0 na rzecz H1
+Zatem dane popieraja model dwuczynnikowy
+
+---------------------------------------------------------
+F Test for Individual and/or Time Effects
+Test F H0: alfa(1)=...=alfa_(N-1)=0
+1
+Dla statystyki F -> p.value = 
+1
+
+Duze p-value (>0.05), wiec nie ma podstaw do odrzucenia H0 na rzecz H1
+Zatem dane popieraja model dwuczynnikowy
+
+---------------------------------------------------------
+F Test for Individual and/or Time Effects
+Test F H0: alfa(1)=...=alfa_(N-1)=0
+1
+Dla statystyki F -> p.value = 
+1
+
+Duze p-value (>0.05), wiec nie ma podstaw do odrzucenia H0 na rzecz H1
+Zatem dane popieraja model dwuczynnikowy
+
+---------------------------------------------------------
+F Test for Individual and/or Time Effects
+Test F H0: alfa(1)=...=alfa_(N-1)=0
+NaN
+Dla statystyki F -> p.value = 
+NaN
+
+
+	F test for time effects
+
+data:  formula_
+F = 7.6804, df1 = -15, df2 = 202, p-value = NA
+alternative hypothesis: significant effects
+
+
+---------------------------------------------------------
+TestF  na redukcje modelu
+H0: alfa(1)=..alfa(N-1) = 
+
+	F test for individual effects
+
+data:  formula_
+F = 2.4429, df1 = -12, df2 = 199, p-value = NA
+alternative hypothesis: significant effects
+
+
+---------------------------------------------------------
+F Test for Individual and/or Time Effects
+Test F H0: alfa(1)=...=alfa_(N-1)=0
+6.09532368932163e-27
+Dla statystyki F -> p.value = 
+6.09532368932163e-27
+
+Niske p-value (<0.05) swiadczy o odrzuceniu H0 na rzecz H1
+Zatem dane popieraja model ze indywidualnymi efektami czasowymi

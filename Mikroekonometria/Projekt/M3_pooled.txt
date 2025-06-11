@@ -1,0 +1,48 @@
+Pooling Model
+
+Call:
+plm(formula = formula_, data = data_plm, model = c("pooling"), 
+    index = c("Wojewodztwo", "Rok"))
+
+Balanced Panel: n = 16, T = 14, N = 224
+
+Residuals:
+      Min.    1st Qu.     Median    3rd Qu.       Max. 
+-0.2608158 -0.0596239  0.0078394  0.0612219  0.4377409 
+
+Coefficients:
+                                                                            Estimate Std. Error t-value  Pr(>|t|)    
+(Intercept)                                                                0.2579611  0.2637547  0.9780 0.3291567    
+XPrzecietne miesieczne wynagrodzenia brutto                                0.5909909  0.1318651  4.4818 1.203e-05 ***
+XMieszkania oddane do użytkowania przeznaczone na sprzedaz lub wynajem     0.0221318  0.0121367  1.8235 0.0696103 .  
+XGestosc zaludnienia powierzchni zabudowanej i zurbanizowanej (osoby/km2) -0.0883737  0.2469979 -0.3578 0.7208505    
+XProdukt krajowy brutto na 10 mieszkancow wojewodztwa                      0.1970120  0.1210290  1.6278 0.1050301    
+XNowo utworzone miejsca pracy                                             -0.0186437  0.0182120 -1.0237 0.3071235    
+XNaklady inwestycyjne na 1 mieszkanca w cenach biezacych                  -0.1233894  0.0319764 -3.8588 0.0001507 ***
+XPrzecietne miesieczne wydatki na 1 mieszkanca                             0.1831452  0.0795789  2.3014 0.0223253 *  
+Xtrend                                                                    -0.0300857  0.0052537 -5.7265 3.425e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Total Sum of Squares:    11.127
+Residual Sum of Squares: 1.9255
+R-Squared:      0.82696
+Adj. R-Squared: 0.82052
+F-statistic: 128.436 on 8 and 215 DF, p-value: < 2.22e-16
+
+---------------------------------------------------------
+Lagrange FF Multiplier Tests for Panel Models, Breusch and Pagan (1980)
+Model ze wspolnym wyrazem wolnym (H0) vs. Model z DWOMA ef. losowymi (H1)
+H0:  sigma2_alfa=0 i sigma2_lambda=0
+
+	Lagrange Multiplier Test - two-ways effects (Breusch-Pagan)
+
+data:  formula_
+chisq = 421.47, df = 2, p-value < 2.2e-16
+alternative hypothesis: significant effects
+
+Dla statystyki chi2 -> p.value = 
+3.01658078169544e-92
+
+Niske p-value (<0.05) swiadczy o odrzuceniu H0 na rzecz H1
+Zatem dane popieraja model ze losowymi efektami

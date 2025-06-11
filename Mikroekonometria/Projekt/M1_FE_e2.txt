@@ -1,0 +1,29 @@
+Twoways effects Within Model
+
+Call:
+plm(formula = formula_, data = data_plm, effect = c("twoways"), 
+    model = c("within"), index = c("Wojewodztwo", "Rok"))
+
+Balanced Panel: n = 16, T = 14, N = 224
+
+Residuals:
+      Min.    1st Qu.     Median    3rd Qu.       Max. 
+-0.1452537 -0.0339450 -0.0016665  0.0325293  0.3111908 
+
+Coefficients:
+                                                                           Estimate Std. Error t-value  Pr(>|t|)    
+XPrzecietne miesieczne wynagrodzenia brutto                                0.395566   0.144674  2.7342 0.0068510 ** 
+XMieszkania oddane do użytkowania przeznaczone na sprzedaz lub wynajem     0.027549   0.012386  2.2242 0.0273240 *  
+XGestosc zaludnienia powierzchni zabudowanej i zurbanizowanej (osoby/km2) -0.775508   0.277276 -2.7969 0.0056964 ** 
+XProdukt krajowy brutto na 10 mieszkancow wojewodztwa                     -0.563450   0.146275 -3.8520 0.0001606 ***
+XNowo utworzone miejsca pracy                                             -0.010995   0.012800 -0.8590 0.3914498    
+XNaklady inwestycyjne na 1 mieszkanca w cenach biezacych                   0.025834   0.031040  0.8323 0.4063168    
+XPrzecietne miesieczne wydatki na 1 mieszkanca                             0.115511   0.083934  1.3762 0.1703930    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Total Sum of Squares:    0.73851
+Residual Sum of Squares: 0.61591
+R-Squared:      0.166
+Adj. R-Squared: 0.010734
+F-statistic: 5.34566 on 7 and 188 DF, p-value: 1.3462e-05

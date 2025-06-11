@@ -1,0 +1,17 @@
+Test F: model dwuczynnikowy vs. model z efektami indywidualnymi
+
+	F test for twoways effects
+
+data:  formula_
+F = 3.3336, df1 = 12, df2 = 188, p-value = 0.0002064
+alternative hypothesis: significant effects
+
+
+Test F: model dwuczynnikowy vs. model z efektami czasowymi
+
+	F test for twoways effects
+
+data:  formula_
+F = 18.105, df1 = 15, df2 = 188, p-value < 2.2e-16
+alternative hypothesis: significant effects
+
